@@ -1,0 +1,81 @@
+13:59:03 - Build started.
+13:59:03 - Project "VMDemo1.deployproj" (StageArtifacts target(s)):
+13:59:03 - Project "VMDemo1.deployproj" (ContentFilesProjectOutputGroup target(s)):
+13:59:03 - Done building project "VMDemo1.deployproj".
+13:59:03 - Done building project "VMDemo1.deployproj".
+13:59:03 - Build succeeded.
+13:59:03 - The following parameter values will be used for this deployment:
+13:59:03 -     adminUsername: adminuser
+13:59:03 -     adminPassword: <securestring>
+13:59:03 -     dnsNameForPublicIP: adminuserdemovm
+13:59:03 -     windowsOSVersion: 2012-R2-Datacenter
+13:59:03 - Launching deployment PowerShell script with the following command:
+13:59:03 - 'c:\users\raghu\documents\visual studio 2015\projects\vmdemo1\vmdemo1\Scripts\Deploy-AzureResourceGroup.ps1' -StorageAccountName '' -ResourceGroupName 'VMDemo1' -ResourceGroupLocation 'centralus' -TemplateFile 'c:\users\raghu\documents\visual studio 2015\projects\vmdemo1\vmdemo1\templates\windowsvirtualmachine.json' -TemplateParametersFile 'c:\users\raghu\documents\visual studio 2015\projects\vmdemo1\vmdemo1\templates\windowsvirtualmachine.parameters.json' -ArtifactStagingDirectory '..\bin\Debug\staging'
+13:59:21 - 
+13:59:21 - 
+13:59:21 - Environment           : AzureCloud
+13:59:21 - Account               : kraghu_306@live.com
+13:59:21 - TenantId              : e894099f-f188-4e33-8dec-f489e99301d2
+13:59:21 - SubscriptionId        : 5519e87a-8168-47b4-b72e-3b4eb43d0b08
+13:59:21 - CurrentStorageAccount : 
+13:59:21 - 
+13:59:31 - [VERBOSE] 1:59:31 PM - Created resource group 'VMDemo1' in location 'centralus'
+13:59:31 - 
+13:59:31 - ResourceGroupName : VMDemo1
+13:59:31 - Location          : centralus
+13:59:31 - Resources         : {}
+13:59:31 - ResourcesTable    : 
+13:59:31 - ProvisioningState : Succeeded
+13:59:31 - Tags              : {}
+13:59:31 - TagsTable         : 
+13:59:31 - ResourceId        : /subscriptions/5519e87a-8168-47b4-b72e-3b4eb43d0b08/resourc
+13:59:31 -                     eGroups/VMDemo1
+13:59:31 - 
+13:59:31 - cmdlet New-AzureRmResourceGroupDeployment at command pipeline position 1
+Supply values for the following parameters:
+14:00:30 - adminPassword: 
+14:00:36 - [VERBOSE] 2:00:36 PM - Create template deployment 'windowsvirtualmachine-0217-1359'.
+14:00:51 - [VERBOSE] 2:00:51 PM - Resource Microsoft.Network/virtualNetworks 'MyVNET' provisioning status is running
+14:00:51 - [VERBOSE] 2:00:51 PM - Resource Microsoft.Storage/storageAccounts 'vhdstorageahrx5isavben6' provisioning status is running
+14:00:55 - [VERBOSE] 2:00:55 PM - Resource Microsoft.Network/publicIPAddresses 'myPublicIP' provisioning status is running
+14:01:05 - [VERBOSE] 2:01:05 PM - Resource Microsoft.Network/virtualNetworks 'MyVNET' provisioning status is succeeded
+14:01:09 - [VERBOSE] 2:01:09 PM - Resource Microsoft.Network/publicIPAddresses 'myPublicIP' provisioning status is succeeded
+14:01:16 - [VERBOSE] 2:01:16 PM - Resource Microsoft.Network/networkInterfaces 'myVMNic' provisioning status is succeeded
+14:01:24 - [VERBOSE] 2:01:24 PM - Resource Microsoft.Storage/storageAccounts 'vhdstorageahrx5isavben6' provisioning status is succeeded
+14:01:24 - [VERBOSE] 2:01:24 PM - Resource Microsoft.Storage/storageAccounts 'vhdstorageahrx5isavben6' provisioning status is succeeded
+14:01:34 - [VERBOSE] 2:01:34 PM - Resource Microsoft.Compute/virtualMachines 'MyWindowsVM' provisioning status is running
+14:06:29 - [VERBOSE] 2:06:29 PM - Resource Microsoft.Compute/virtualMachines 'MyWindowsVM' provisioning status is succeeded
+14:06:39 - [VERBOSE] 2:06:39 PM - Resource Microsoft.Compute/virtualMachines/extensions 'MyWindowsVM/Microsoft.Insights.VMDiagnosticsSettings' provisioning status is running
+14:09:11 - [VERBOSE] 2:09:11 PM - Resource Microsoft.Compute/virtualMachines/extensions 'MyWindowsVM/Microsoft.Insights.VMDiagnosticsSettings' provisioning status is succeeded
+14:09:13 - 
+14:09:13 - DeploymentName     : windowsvirtualmachine-0217-1359
+14:09:13 - CorrelationId      : 6e73dc0e-ccbf-426c-8ea2-5ca6f338666c
+14:09:13 - ResourceGroupName  : VMDemo1
+14:09:13 - ProvisioningState  : Succeeded
+14:09:13 - Timestamp          : 2/17/2016 2:09:10 PM
+14:09:13 - Mode               : Incremental
+14:09:13 - TemplateLink       : 
+14:09:13 - TemplateLinkString : 
+14:09:13 - Parameters         : {[adminUsername, Microsoft.Azure.Commands.Resources.Models
+14:09:13 -                      .DeploymentVariable], [adminPassword, Microsoft.Azure.Comm
+14:09:13 -                      ands.Resources.Models.DeploymentVariable], 
+14:09:13 -                      [dnsNameForPublicIP, Microsoft.Azure.Commands.Resources.Mo
+14:09:13 -                      dels.DeploymentVariable], [windowsOSVersion, Microsoft.Azu
+14:09:13 -                      re.Commands.Resources.Models.DeploymentVariable]}
+14:09:13 - ParametersString   : 
+14:09:13 -                      Name             Type                       Value     
+14:09:13 -                      ===============  =========================  ==========
+14:09:13 -                      adminUsername    String                     adminuser 
+14:09:13 -                      adminPassword    SecureString                         
+14:09:13 -                      dnsNameForPublicIP  String                     
+14:09:13 -                      adminuserdemovm
+14:09:13 -                      windowsOSVersion  String                     
+14:09:13 -                      2012-R2-Datacenter
+14:09:13 -                      
+14:09:13 - Outputs            : 
+14:09:13 - OutputsString      : 
+14:09:13 - 
+14:09:13 - 
+14:09:13 - 
+14:09:13 - 
+14:09:13 - Successfully deployed template 'c:\users\raghu\documents\visual studio 2015\projects\vmdemo1\vmdemo1\templates\windowsvirtualmachine.json' to resource group 'VMDemo1'.
